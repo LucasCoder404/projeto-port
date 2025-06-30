@@ -2,15 +2,13 @@
   "version": 2,
   "builds": [
     {
-      "src": "public/**",
+      "src": "public/index.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/.*",
-      "status": 200,
-      "headers": { "Cache-Control": "public, max-age=3600" },
+      "src": "/(.*)",
       "dest": "public/index.html"
     }
   ]
