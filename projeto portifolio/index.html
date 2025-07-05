@@ -127,39 +127,40 @@
     <a href="#portfolio">Portfólio</a>
     <a href="#contato">Contato</a>
   </nav>
-<section id="sobre">
+
+  <section id="sobre">
     <h2>Perfil Técnico e Profissional</h2>
     
     <div class="profile-header">
-        <p><strong>Nome:</strong> Lucas de Oliveira Sperandio<br>
-        <strong>Idade:</strong> 18 anos<br>
-        <strong>Localização:</strong> Alto Garças, Mato Grosso</p>
+      <p><strong>Nome:</strong> Lucas de Oliveira Sperandio<br>
+      <strong>Idade:</strong> 18 anos<br>
+      <strong>Localização:</strong> Alto Garças, Mato Grosso</p>
     </div>
 
     <h3>Áreas de Competência Técnica</h3>
     <ul>
-        <li><strong>Desenvolvimento de Software:</strong> Domínio prático em lógica de programação, algoritmos e estruturas de dados com aplicação para solução de problemas computacionais</li>
-        <li><strong>Eletromecânica Industrial:</strong> Conhecimentos aplicados em sistemas elétricos industriais com ênfase em controle de processos e eficiência energética</li>
-       
+      <li><strong>Desenvolvimento de Software:</strong> Domínio prático em lógica de programação, algoritmos e estruturas de dados com aplicação para solução de problemas computacionais</li>
+      <li><strong>Eletromecânica Industrial:</strong> Conhecimentos aplicados em sistemas elétricos industriais com ênfase em controle de processos e eficiência energética</li>
+    </ul>
 
     <h3>Atividades Complementares Estruturadas</h3>
     <ul>
-        <li><strong>Otimização Cognitiva:</strong> Prática sistemática de artes marciais (Krav Maga/Jiu-Jitsu) e condicionamento físico para desenvolvimento de disciplina operacional e gestão de estresse em ambientes de alta pressão</li>
-        <li><strong>Pesquisa Aplicada:</strong> Estudo de teoria musical computacional para modelagem de algoritmos generativos e análise de padrões sonoros</li>
-        <li><strong>Análise Técnica:</strong> Revisão crítica de produções cinematográficas com foco em estruturas narrativas e técnicas de pós-produção digital</li>
+      <li><strong>Otimização Cognitiva:</strong> Prática sistemática de artes marciais (Krav Maga/Jiu-Jitsu) e condicionamento físico para desenvolvimento de disciplina operacional e gestão de estresse em ambientes de alta pressão</li>
+      <li><strong>Pesquisa Aplicada:</strong> Estudo de teoria musical computacional para modelagem de algoritmos generativos e análise de padrões sonoros</li>
+      <li><strong>Análise Técnica:</strong> Revisão crítica de produções cinematográficas com foco em estruturas narrativas e técnicas de pós-produção digital</li>
     </ul>
 
     <h3>Competências Comportamentais</h3>
     <div class="soft-skills">
-        <ul>
-            <li><strong>Resolução Algorítmica de Problemas:</strong> Capacidade de decompor desafios complexos em etapas executáveis</li>
-            <li><strong>Gestão de Ciclo de Desenvolvimento:</strong> Disciplina na implementação iterativa de projetos técnicos</li>
-            <li><strong>Colaboração Técnica:</strong> Habilidade de integração em equipes multidisciplinares com comunicação precisa de conceitos especializados</li>
-            <li><strong>Resiliência Operacional:</strong> Manutenção de desempenho estável sob condições de restrição temporal ou técnica</li>
-            <li><strong>Inovação Sistêmica:</strong> Criatividade aplicada à integração de tecnologias heterogêneas (TI + sistemas industriais)</li>
-        </ul>
+      <ul>
+        <li><strong>Resolução Algorítmica de Problemas:</strong> Capacidade de decompor desafios complexos em etapas executáveis</li>
+        <li><strong>Gestão de Ciclo de Desenvolvimento:</strong> Disciplina na implementação iterativa de projetos técnicos</li>
+        <li><strong>Colaboração Técnica:</strong> Habilidade de integração em equipes multidisciplinares com comunicação precisa de conceitos especializados</li>
+        <li><strong>Resiliência Operacional:</strong> Manutenção de desempenho estável sob condições de restrição temporal ou técnica</li>
+        <li><strong>Inovação Sistêmica:</strong> Criatividade aplicada à integração de tecnologias heterogêneas (TI + sistemas industriais)</li>
+      </ul>
     </div>
-</section>
+  </section>
 
   <section id="formacao">
     <h2>Formação</h2>
@@ -221,5 +222,23 @@
   <footer>
     <p>&copy; 2024 Lucas de Oliveira Sperandio</p>
   </footer>
+
+  <script>
+    // Validação básica do formulário
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      
+      if(!nome || !email) {
+        alert('Por favor, preencha todos os campos obrigatórios');
+        return;
+      }
+      
+      alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
+      e.target.reset();
+    });
+  </script>
 </body>
 </html>
